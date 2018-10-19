@@ -1,0 +1,42 @@
+(t0): New task T0
+(t0): T0 running
+(t1): New task T1
+(t1): T0 running
+(t2): New task T2
+(t2): T0 running
+(t3): New task T3
+(t3): T0 running
+(t3): Context switch (T0)<->(T1)
+(t4): T1 running
+(t5): T1 running
+(t6): T1 running
+(t7): T1 running
+(t7): Context switch (T1)<->(T2)
+(t8): T2 running
+(t9): T2 running
+(t9): Context switch (T2)<->(T3)
+(t10): T3 running
+(t10): Context switch (T3)<->(T0)
+(t11): T0 running
+(t11): Context switch (T0)<->(T1)
+(t12): T1 running
+(t13): T1 running
+(t14): T1 running
+(t15): T1 running
+(t16): T1 running
+(t17): T1 running
+(t18): T1 running
+(t19): T1 running
+(t19): Context switch (T1)<->(idle)
+==================
+T0	0	4	running
+T0	4	11	ready
+T0	11	12	running
+T1	1	4	ready
+T1	4	8	running
+T1	8	12	ready
+T1	12	20	running
+T2	2	8	ready
+T2	8	10	running
+T3	3	10	ready
+T3	10	11	running

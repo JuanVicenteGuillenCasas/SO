@@ -1,0 +1,10 @@
+1-
+	a) Tenemos 8 procesos. Hemos ejecutado el archivo original.
+	b) En la ejecución original hemos observado que como máximo hay dos procesos ejecutandose simultáneamente.
+	c) Si ponemos un sleep(2) en la parte del padre tenemos que los padres tardan mucho más que los hijos y estos acaban mucho antes que ellos, quedando 7 de los 8 zombies.
+	d) No cambia absolutamente en nada dado que tanto las variables con memoria dinamica como las variables globales no se pasan en referencia a los procesos hijos.
+	e) Solo se escribe a partir del último hijo que se crea.
+
+2- 
+	Ejercicio de los semáforos, hemos añadido dos semaforos en cada thread para así controlar las modificaciones de la variable resultado, usando el esquema productor-consumidor.
+ Se pueden observar los cambios en la carpeta de PartialSum en el partial_sum.c.  
